@@ -32,7 +32,7 @@ if(!(input1.equals("admin"))){
    return "redirect:form";  
     
 }
-else if(!input2.equals("admin123")){   
+else if(!input2.equals("admin1234")){   
     startmessage="Contrasena Incorrecto";
     return "redirect:form";  
 }
