@@ -10,18 +10,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <title>Form Page</title>
+        <title>Login</title>
     </head>
     <body>
         <h1>Hello World! This is WEB-INF/jsp/form.jsp</h1>
-         <h2>Input1 = “good”</h2>
-         <h2>Input2 = “stuff” </h2>
-         <h3>Try other inputs too. See what happens. </h3>
-         <h4>Message: ${message}</h4>
+         <h3>Ingresa usuario y contrasena. </h3>
+         <h4>Error: ${message}</h4>
         
             <form method="POST" action="http://localhost:8084/HelloProject/application/form">
-              <label>Input1 to send: <input type="text" name="input1" /></label>
-              <label>Input2 to send: <input type="text" name="input2" /></label>
+              <label>Usuario: <input type="text" name="input1" /></label>
+              <label>Contraseña: <input type="password" name="input2" /></label>
               <input type="submit" />
             </form>
     </body>

@@ -26,11 +26,21 @@ public class HelloController {
  
 // if the input1 and input2 required values don't match what was sent from form.jsp
 // redirect back to form.jsp
+
+if(!(input1.equals("admin"))){
+    startmessage="Usuario incorrecto";
+   return "redirect:form";  
+    
+}
+else if(!input2.equals("admin123")){   
+    startmessage="Contrasena Incorrecto";
+    return "redirect:form";  
+}
  
  
 //otherwise we return jsp page hello
  
-            model.addAttribute("message", input1);
+            model.addAttribute("message", "Hola "+input1);
             return "hello";
          
     }
